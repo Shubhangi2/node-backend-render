@@ -13,7 +13,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/user", (req, res) => {
+  console.log("response for user");
   res.json(user);
+});
+app.get("/youtube", (req, res) => {
+  res.send("Welcom back to my youtube channel");
 });
 
 app.listen(process.env.PORT, () => {
